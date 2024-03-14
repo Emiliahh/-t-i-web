@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <link href="style/element.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        .p {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px; 
+            font-weight: 400;
+        }
+        body{
+            margin: 0;
+        }
+
+        .search-row{
+            display: flex;
+            flex-direction: row;
+            height: 55px;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            background-color: rgb(255, 212, 0);
+        }
+        .search-boxes{
+            font-weight: 500;
+            border-radius: 5px 0 0 5px;
+            border-width: 0.8px;
+            border-style: solid;
+            height: 26px;
+            width: 460px;
+            padding-right: 4px;
+            padding-left: 16px;
+            border-color: #f8f8f8;
+        }
+        .search-boxes::placeholder{
+            font-style: italic;
+        }
+        .search-boxes:focus{
+            background-color: #f8f8f8;
+            outline: none;
+            font-style: normal;
+        }
+        .search-button{
+            flex-grow: 0;
+            height: 30px;
+            border-width: 0.8px;
+            border-style: solid;
+            width:40px ;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            background-color: rgb(248, 248, 248);
+            border-color: #f8f8f8;
+        }
+        .left-section{
+            width: 150px;
+            margin-right:60px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: space-between;
+            justify-content: left;
+        }
+        .right-section{
+            width: 100px;
+            margin-left: 0px;
+            display: flex;
+            justify-content: right;
+            margin-right: 15px;
+        }
+        .center-section{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .search-icon{
+            width: 20px;
+        }
+        .cart-button{
+            height: 40px;
+            width: 60px;
+            border-style: solid;
+            border-radius: 3px;
+            border-width: 1px;
+            cursor: pointer;
+            background-color:   rgba(255, 172, 10, 0.6);
+            border-color:rgba(255, 172, 10, 0.6); ;
+        }
+        .cart-image{
+            width: 25px;
+            display: inline;
+        }
+        .menu-button{
+            height: 40px;
+            width: 60px;
+            background-color: rgb(255, 212, 0);
+            border-color:rgb(255, 212, 0) ;
+            border-style: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .menu-button:hover{
+            background-color: rgba(255, 212, 0,0.5);
+            border-color: rgba(255, 212, 0,0.5);
+        }
+        .menu-button:active{
+            background-color:   rgba(255, 172, 10, 0.6);
+        }
+        .login-button{
+            background-color:   rgba(255, 172, 10, 0.6);
+            border-radius: 4px;
+            border-color: rgba(255, 172, 10, 0.6);
+            border-style: solid;
+            margin-right: 15px;
+        }
+        </style>
+        <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }         
+        </script>
+    </head>
+    <body> 
+        <div class="search-row">
+            <div class="left-section">
+                <button class="menu-button" onclick="toggleMenu()">
+                <img  style="width: 23px;" src="icon/menu-svgrepo-com.svg">
+            </button>
+            <img  style="width: 25px;" src="icon/cannabis-leaf-svgrepo-com.svg";>
+            </div>
+            <div class="center-section">
+                <input class="search-boxes" id="search" type="text" placeholder="Tìm kiếm...">
+                <button class="search-button"><img class="search-icon" src="icon/icons8-search.svg"></button>
+            </div>
+            <div class="right-section">
+                <button class="login-button">
+                    Đăng nhập 
+                </button>
+                <button class="cart-button">
+                    <svg class="cart-image" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="cart"><path d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#">Item 1</a><br>
+            <a href="#">Item 2</a><br>
+            <a href="#">Item 3</a><br>
+        </div>
+    </body>
+</htm>
