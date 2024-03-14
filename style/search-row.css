@@ -47,7 +47,7 @@
     justify-content: left;
 }
 .right-section{
-    width: 100px;
+    width: 120px;
     margin-left: 0px;
     display: flex;
     justify-content: right;
@@ -102,4 +102,9 @@
     width:80px;
     display: inline-flex;
     align-items:center;
+}
+.logo-button{
+    background-color: rgb(255, 212, 0);
+    border-style: none;
+    cursor: pointer;
 }
