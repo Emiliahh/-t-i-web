@@ -1,0 +1,8 @@
+.function-row{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: space-between;
+}
