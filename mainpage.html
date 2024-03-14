@@ -115,8 +115,11 @@
             border-color: rgba(255, 172, 10, 0.6);
             border-style: solid;
             margin-right: 15px;
+            display: inline-flex;
+            align-items: center;
         }
         </style>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
         <script>
         function toggleMenu() {
             var menu = document.getElementById("menu");
@@ -138,10 +141,8 @@
             </div>
             <div class="right-section">
                 <button class="login-button">
-                    hỗ trợ
-                </button>
-                <button class="login-button">
-                    Đăng nhập 
+                     Đăng nhập 
+                     <i class="fa-solid fa-user"></i>
                 </button>
                 <button class="cart-button">
                     <span></span>
@@ -149,7 +150,7 @@
                 </button>
             </div>
         </div>
-        <!-- experimental subject-->
+        <!-- experimental-->
         <div class="menu" id="menu">
             <a href="#">Item 1</a><br>
             <a href="#">Item 2</a><br>
