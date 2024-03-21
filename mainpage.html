@@ -2,6 +2,7 @@
 <htm>
 
     <head>
+        <title>ÁO SỜ TO</title>
         <link href="style/search-row.css" type="text/css" rel="stylesheet">
         <link href="style/type-row.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +23,21 @@
                 margin: 0;
             }
         </style>
+        <script>
+        
+            function login() {
+                var username = prompt('User name:');
+                var password = prompt('Password');
+    
+                if (username !==null && password !==null) {
+                    alert('Đăng nhập thành công');
+                    document.getElementById('username').innerHTML= username;
+                } else {
+                    alert('Đăng nhập thất bại');
+                    document.getElementById('username').innerHTML= 'Đăng nhập';
+                }
+            }
+            </script>
     </head>
 
     <body>
@@ -42,9 +58,9 @@
             </div>
 
             <div class="right-section">
-                <button class="login-button">
+                <button class="login-button" onclick="login()">
                     <img style="width: 23px;" src="icon/user.svg">
-                    Đăng nhập
+                    <span id="username">Đăng nhập</span>
                 </button>
                 <button class="cart-button">
                     <span></span>
@@ -84,6 +100,6 @@
         
         </div class="banner-image">
         <img class="banner-head" src="image/banner-thoi-trang-nam-dep.jpg">
-        </div>
+        </div>        
     </body>
-</htm
+</html>
