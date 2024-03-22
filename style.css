@@ -42,7 +42,7 @@ header{
 .navi-icon i:hover{
     color:red
 }
- .cover{
+.cover{
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -56,9 +56,15 @@ header{
 }
 .product{
     display:grid;
-    grid-column:repeat(4,1fr) ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
+    padding: 20px;
 }
 .row{
-    c
+    position: relative;;
+
+}
+.row img{
+    width: 100%;
+    height: auto;
 }

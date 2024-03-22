@@ -3,15 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/4da6ad9f64.js" crossorigin="anonymous"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navi-head").style.top = "0";
+            } else {
+                document.getElementById("navi-head").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </head>
 
 <body>
-    <header>
+    <header id="navi-head">
         <a href="#" class="logo"> <img src="image/Screenshot 2024-03-21 151214.png" alt="" </a>
             <ul class="menu-navi">
                 <li><a href="#">Trang chủ</a></li>
@@ -54,11 +66,53 @@
                 <div class="product-info">
                     <h4> Set bán thể thao</h4>
                     <p>120.000đ</p>
-                    </div>
+                </div>
             </div>
 
             <div class="row">
-                <img src="clothes/image/1.jpg" </div>
+                <img src="clothes/image/2.jpg" </div>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hear-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="product-info">
+                    <h4> Set bán thể thao</h4>
+                    <p>1.199.000đ</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="clothes/image/3.jpg" </div>
+                <div class="product-text">
+                    <h5>Mới</h5>
+                </div>
+                <div class="hear-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="product-info">
+                    <h4> Set bán thể thao</h4>
+                    <p>120.000đ</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="clothes/image/4.jpg" </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
@@ -75,11 +129,11 @@
                 <div class="product-info">
                     <h4> Set bán thể thao</h4>
                     <p>120.000đ</p>
-                    </div>
+                </div>
             </div>
 
             <div class="row">
-                <img src="clothes/image/1.jpg" </div>
+                <img src="clothes/image/5.jpg" </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
@@ -96,49 +150,7 @@
                 <div class="product-info">
                     <h4> Set bán thể thao</h4>
                     <p>120.000đ</p>
-                    </div>
-            </div>
-
-            <div class="row">
-                <img src="clothes/image/1.jpg" </div>
-                <div class="product-text">
-                    <h5>Sale</h5>
                 </div>
-                <div class="hear-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-info">
-                    <h4> Set bán thể thao</h4>
-                    <p>120.000đ</p>
-                    </div>
-            </div>
-
-            <div class="row">
-                <img src="clothes/image/1.jpg" </div>
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="hear-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-info">
-                    <h4> Set bán thể thao</h4>
-                    <p>120.000đ</p>
-                    </div>
             </div>
     </section>
 </body>
