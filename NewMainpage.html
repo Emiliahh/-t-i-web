@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/4da6ad9f64.js" crossorigin="anonymous"></script>
     <script>
-        var prevScrollpos = window.pageYOffset;
+        var prevScrollpos = window.pageYOffset;-
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
@@ -26,7 +26,8 @@
     <header id="navi-head">
         <a href="#" class="logo"> <img src="image/Screenshot 2024-03-21 151214.png" alt="" </a>
             <ul class="menu-navi">
-                <li><a href="#">Trang chủ</a></li>
+                <!-- Đây là phần head, href là nhảy sang trang khác -->
+                <li><a href="NewMainpage.html">Trang chủ</a></li> 
                 <li><a href="#">Sản phẩm</a></li>
                 <li><a href="#">Ưu đãi</a></li>
                 <li><a href="#">Liên hệ</a></li>
@@ -34,9 +35,14 @@
             </ul>
             <div class="navi-icon">
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <i class="fa-solid fa-bars"></i>
+                <!-- drop down phần này  -->
+                <div class="drop-down-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="drop-down">
+                    </ul>
+                </div>
             </div>
     </header>
     <div class="cover-img">
