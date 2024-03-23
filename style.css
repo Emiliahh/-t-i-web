@@ -47,7 +47,8 @@ header{
     background-position: center;
     background-size: cover;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+
 }
 .trending-text{
     text-align: center;
@@ -61,10 +62,15 @@ header{
     padding: 20px;
 }
 .row{
-    position: relative;;
+    position: relative;
 
 }
 .row img{
     width: 100%;
     height: auto;
+    transition: transform 330ms ease-in-out;
+    cursor: pointer;
+}
+.row img:hover{
+    transform: scale(1.15);
 }
