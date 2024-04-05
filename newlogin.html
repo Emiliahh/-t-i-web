@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4da6ad9f64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="navi-head">
+        <a href="#" class="logo"> <img src="image/Screenshot 2024-03-21 151214.png" alt="" </a>
+            <ul class="menu-navi">
+                <!-- Đây là phần head, href là nhảy sang trang khác -->
+                <li><a href="NewMainpage.html">Trang chủ</a></li>
+                <li><a href="product.html">Sản phẩm</a></li>
+                <li><a href="#!">Ưu đãi</a></li>
+                <li><a href="#!">Liên hệ</a></li>
+                <li><a href="https://vtcnews.vn/doi-hinh-tuyen-viet-nam-vs-indonesia-quang-hai-du-bi-tien-linh-tro-lai-ar861137.html">Tin tức</a></li>
+            </ul>
+            <div class="navi-icon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="newlogin.html"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <!-- drop down phần này  -->
+                <div class="drop-down-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="drop-down">
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <section class="meinpage">
+        <div class="wrapper">
+            <form class="login-boxes" id="login-boxes">
+                <h1 class="form-heading">Đăng nhập</h1>
+                <div class="form-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="form-input" id="usr" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" class="form-input" id="pw" placeholder="Mật khẩu">
+                </div>
+                <input type="submit" value="Đăng nhập" class="form-submit">
+            </form>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let loginForm = document.getElementById("login-boxes");
+            loginForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                let username = document.getElementById("usr").value;
+                let password = document.getElementById("pw").value;
+                if (username !== "" && password !== "") {
+                    window.alert("Đăng nhập thành công");
+                    window.location.href="NewMainpage.html";
+                } else {
+                    window.alert("Đăng nhập thất bại, vui lòng đăng nhập lại");
+                    document.getElementById("usr").value = "";
+                    document.getElementById("pw").value = "";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
