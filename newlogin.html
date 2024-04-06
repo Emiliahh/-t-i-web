@@ -12,24 +12,34 @@
 <body>
     <header id="navi-head">
         <a href="#" class="logo"> <img src="image/Screenshot 2024-03-21 151214.png" alt="" </a>
-            <ul class="menu-navi">
-                <!-- Đây là phần head, href là nhảy sang trang khác -->
-                <li><a href="NewMainpage.html">Trang chủ</a></li>
-                <li><a href="product.html">Sản phẩm</a></li>
-                <li><a href="#!">Ưu đãi</a></li>
-                <li><a href="#!">Liên hệ</a></li>
-                <li><a href="https://vtcnews.vn/doi-hinh-tuyen-viet-nam-vs-indonesia-quang-hai-du-bi-tien-linh-tro-lai-ar861137.html">Tin tức</a></li>
-            </ul>
+            <div id="uah">
+                <ul class="side-bar">
+                    <li onclick=sideclose()><i class="fa-solid fa-x"></i></li>
+                    <li><a href="NewMainpage.html">Trang chủ</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li><a href="#">Ưu đãi</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+                <ul class="menu-navi">
+                    <!-- Đây là phần head, href là nhảy sang trang khác -->
+                    <li><a href="NewMainpage.html">Trang chủ</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li><a href="#">Ưu đãi</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
             <div class="navi-icon">
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="newlogin.html"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <!-- drop down phần này  -->
-                <div class="drop-down-menu">
-                    <i class="fa-solid fa-bars"></i>
-                    <ul class="drop-down">
-                    </ul>
-                </div>
+
+                <ul class="drop-down">
+                    <li onclick=sideshow()><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </div>
             </div>
     </header>
     <section class="meinpage">
@@ -48,6 +58,7 @@
             </form>
         </div>
     </section>
+    <script src="function.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let loginForm = document.getElementById("login-boxes");
@@ -57,7 +68,7 @@
                 let password = document.getElementById("pw").value;
                 if (username !== "" && password !== "") {
                     window.alert("Đăng nhập thành công");
-                    window.location.href="NewMainpage.html";
+                    window.location.href = "NewMainpage.html";
                 } else {
                     window.alert("Đăng nhập thất bại, vui lòng đăng nhập lại");
                     document.getElementById("usr").value = "";
