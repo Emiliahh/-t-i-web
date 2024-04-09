@@ -9,13 +9,16 @@ window.addEventListener("scroll", function () {
     }
 
 })
-function sideshow(){
-    const side=document.querySelector('.side-bar');
-    console.log("runing")
-    side.style.display="flex";
+function sideshow() {
+    const side = document.querySelector('.side-bar');
+    console.log("running");
+    side.style.display = "flex";
+    side.style.transition = "all 0.5s ease-out";
 }
+
 function sideclose(){
     const side=document.querySelector('.side-bar');
     console.log("runing")
     side.style.display="none";
+    side.style.transition = "all 0.5s ease-out";
 }

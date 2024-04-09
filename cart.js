@@ -79,4 +79,3 @@ function add_list(index){
 function render(arr){
   
 }
-
